@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "xisuma_inventory",
+  "version": "${version}",
+
+  "name": "Xisuma Inventory",
+  "description": "In this mod I try to recreate almost all of the ideas showed in xisumavoid's video: Minecraft 1.20 Should Be \"The Inventory Update\"",
+  "authors": [
+    "Bar Einav"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "Fabric 1.18.2 example mod: https://github.com/FabricMC/fabric-example-mod, Xisumavoid's Minecraft 1.20 Should Be \"The Inventory Update\" video: https://www.youtube.com/watch?v=zJtJ90Vl03M, 1.18 fabric modding series: https://www.youtube.com/playlist?list=PLKGarocXCE1ECgBI1_Z_Yr4qMdhjVi3kg"
+  },
+
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.bar.xisuma_inventory.XisumaInventory"
+    ],
+    "client": [
+      "me.bar.xisuma_inventory.XisumaInventoryClient"
+    ]
+  },
+  "mixins": [
+    "xisuma_inventory.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
